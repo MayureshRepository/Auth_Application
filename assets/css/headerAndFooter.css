@@ -8,10 +8,34 @@ nav{
     text-shadow: 1px 1px orange;
 }
 
+.conatiner{
+    min-height: 90vh;
+}
+.rightcontent{
+    display: inline-flex;
+    float: right;
+}
+.rightcontent a{
+    margin: 2px 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-shadow: none;
+}
+
+.newRoboto{
+    /* font-family: 'Roboto',sans-serif; */
+    font-family: 'PT Sans', sans-serif;
+}
+.newRoboto:hover{
+     font-family: 'Roboto',sans-serif; 
+    /* font-family: 'PT Sans', sans-serif; */
+}
+
 
 
 .containerfooter{
-    font-weight: 900;
+   
      height: 60px;
      width: 100%;
      background-color: black;
@@ -28,19 +52,53 @@ nav{
 .centeralign{
     text-align: center;
 }
+.content{
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ulfooter{
     display: inline-flex;
     flex-direction: row;
+    position: relative;
+    left: 35%;
+    margin-top: 10px;
+
+
 }
 .ulfooter li{
     text-align: none;
     list-style: none;
-    margin: 2px 5px;
+    margin: 2px 10px;
+}
+.twitter-icon-radius {
+    transition: border-radius 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+.twitter-icon-radius:hover{
+    /* box-shadow: 0 4px 8px 10px red;
+    border-radius: 50%; */
+    cursor: pointer;
+    border-radius: 50%; /* Set the border-radius to 50% for a circular shape */
+    box-shadow:1px 4px 20px 12px #ca2f2f; /* Add a subtle box shadow on hover */
+}
+.snapShot{
+    display: flex;
+position: absolute;
+left: 10px;
+font-family: 'Roboto',sans-serif;
 }
 
+
+
 .userNameSpace{
-    background-color: aqua;
+    background-color: #818b8b;
     width: auto;
     position: relative;
-    border-radius: 10px;
+    padding: 2px;
+    border-radius: 25px;
 }
+.userNameSpace:hover{
+    background-color: #818484;
+}
+

@@ -9,25 +9,45 @@
      Auth App @ &nbsp; 
     </div>
 
+
+    <div class="rightcontent">
+
+
+      
     <% if(locals.user){%>
 
       <!-- //TODO Add User icon And DropDown -->
+      <% if(user.first_name && user.first_name.length>0){ %>
       <span class="userNameSpace">
-        <span class="whiteColor"><%= user.first_name %></span>
+      <a href="/profile"> 
+         <span class="whiteColor">
+          
+
+          
+            <%= locals.user.first_name %> 
+           
+        </span>
+      </a>
 
       </span>
+      <% } %>
 
       &nbsp;
       <a href="/getpasswordChange">Change Password</a>
       &nbsp;
-      <a href="/signout">Sign Out</a>
+      <a href="/signout" title="Log Out" style="    top: 10px;
+      right: 5px;
+      position: relative;"><i class="fa-solid fa-right-from-bracket fa-xl"></i></a>
 
      
 
       <%}else{%>
  
-        <a href="/signin">Sign In</a>
-        <a href="/Sign_Up">Sign Up</a>
+        <a href="/signin" class="newRoboto">Sign In</a>
+        <a href="/Sign_Up" class="newRoboto">Sign Up</a>
         <%}%>
+
+
+    </div>
   </nav>
   

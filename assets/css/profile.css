@@ -1,6 +1,8 @@
-.container{
-    font-family: 'Roboto',sans-serif;
+.containers{
+    font-family: 'Poppins',sans-serif;
+    background-color: #e7e7e7;
     min-height: 90vh;
+    padding: 10px 30px;
   }
   .nameColor{
     background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));

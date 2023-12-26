@@ -23,7 +23,7 @@ const db= mongoose.connection;
 db.on('error',console.error.bind(console,'there is an error'));
 
 db.once('open' ,function(){
-    console.log(" Conneccted to IssueTracker DB!!");
+    console.log(" Conneccted to Auth DB!!");
 });
 
 

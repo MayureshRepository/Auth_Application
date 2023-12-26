@@ -1,20 +1,22 @@
-<link rel="stylesheet" href="css/profile.css">
+<link rel="stylesheet" href="/css/profile.css">
 
-<div class="container">
+<div class="containers">
 
 
     <h1>Hello
        <span class="nameColor">
-        <%= locals.user.given_name %>
+      <% if(locals.user.first_name && locals.user.first_name.length>0){ %>
+        <%= locals.user.first_name %> 
+        <% } %>
        </span>
        !! 
        <br>
       
-       Email: <span class="emailColor">
+      
+    </h1>
+    Email: <span class="emailColor">
         <%= locals.user.email %>
        </span>
-    </h1>
-
     
 
 </div>
