@@ -1,0 +1,8 @@
+body{
+  font-family: 'Roboto',sans-serif;
+}
+
+.card:hover{
+  box-shadow: 0 0 30px 20px rgba(235, 140, 31, 0.5);
+  transition: box-shadow ease-in-out .5s;
+}

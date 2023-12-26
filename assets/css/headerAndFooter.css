@@ -1,0 +1,46 @@
+nav{
+    height: 60px;
+    font-family: 'Manrope',sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-shadow: 1px 1px orange;
+}
+
+
+
+.containerfooter{
+    font-weight: 900;
+     height: 60px;
+     width: 100%;
+     background-color: black;
+     font-family: 'Roboto' ,sans-serif;
+     color: white;
+     padding: 0px;
+     margin:0px;
+}
+
+
+.whiteColor{
+    color: white;
+}
+.centeralign{
+    text-align: center;
+}
+.ulfooter{
+    display: inline-flex;
+    flex-direction: row;
+}
+.ulfooter li{
+    text-align: none;
+    list-style: none;
+    margin: 2px 5px;
+}
+
+.userNameSpace{
+    background-color: aqua;
+    width: auto;
+    position: relative;
+    border-radius: 10px;
+}

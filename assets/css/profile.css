@@ -1,0 +1,15 @@
+.container{
+    font-family: 'Roboto',sans-serif;
+    min-height: 90vh;
+  }
+  .nameColor{
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .emailColor{
+    background: -webkit-linear-gradient(rgb(223, 161, 4), rgb(14, 255, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

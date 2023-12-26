@@ -1,0 +1,51 @@
+.mainContainer{
+    min-height: 110vh;
+    margin-bottom: 10px;
+}
+.createForms{
+    margin: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+ 
+    
+}
+.form-group{
+    width: 50vw;
+}
+.form-control{
+    font-family: 'Manrope', sans-serif;
+    margin: 5px 1px;
+}
+
+.labelClass{
+    font-size: 16px ;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerTitle{
+    font-weight: 800;
+    font-family: 'Roboto',sans-serif;
+}
+
+.dropDown{
+    width: 50vw;
+    font-family: 'Manrope', sans-serif;
+    margin: 5px 1px;
+}
+.selectLabels{
+    width: 15vw;
+}
+.selectLabels::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+.optionLabels:nth-child(odd){
+    color: grey;
+}
