@@ -1,22 +1,16 @@
-
 const express = require('express');
 const cookieParser = require('cookie-parser');
-
 const path = require('path');
 //It should be above express app fired 
 const db = require('./config/mongoose');
 const newProject = require('./model/user');
-
 const app = express();
-
 const port =8000;
 //Used for Session Cookie
 const session =require('express-session');
 
-
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
-const passportJWT = require('./config/passport-jwt-strategy');
 const googleStrategy = require('./config/passport-google-oauth2-strategy');
 
 const expressLayouts = require('express-ejs-layouts');
@@ -50,7 +44,7 @@ app.use(session({
         maxAge:(1000*60*100)
     },
     store: MongoStore.create({
-        mongoUrl: mongoURI,
+        mongoUrl: process.env.MONGODB_URI,
         autoRemove: 'interval',
         autoRemoveInterval: 10 // In minutes. Default
       })
