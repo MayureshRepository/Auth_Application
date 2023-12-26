@@ -23,8 +23,34 @@ body{
  font-size: 120px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold ;
-    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    background-image: linear-gradient(60deg, #E21143, #FFB03A );
+    text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
+}
+.newheading{
+  display: flex;
+  justify-content: center;
+}
+
+.heading4{
+
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold ;
+  text-align: center;
+  background-image: linear-gradient(60deg, #FFB03A , #E21143);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.newSpan{
+  font-size: 60px;
+  color: white!important;
+  /* top: -5px; */
+  bottom: 5px;
+  left: 10px;
+  /* display: flex; */
+  position: relative;
 }

@@ -4,6 +4,8 @@
 
 
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+
+ 
     <!-- Navbar content -->
     <div style="text-align: center;font-weight: 900;color: white;">
      Auth App @ &nbsp; 
@@ -18,18 +20,17 @@
 
       <!-- //TODO Add User icon And DropDown -->
       <% if(user.first_name && user.first_name.length>0){ %>
-      <span class="userNameSpace">
+     
       <a href="/profile"> 
+        <span class="userNameSpace">
          <span class="whiteColor">
-          
-
-          
             <%= locals.user.first_name %> 
            
         </span>
+      </span>
       </a>
 
-      </span>
+    
       <% } %>
 
       &nbsp;
@@ -49,5 +50,9 @@
 
 
     </div>
+
+ 
+
+
   </nav>
   

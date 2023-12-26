@@ -2,7 +2,14 @@
 
 <div class="fluid-container">
 
-<h1 class="heading">Hello User</h1>
+<h1 class="heading">Hello User !!</h1>
 
+<% if(!locals.user){%>
+<div class="newheading">
+<h4 class="heading4"> <span>Sign In </span>  or  <span> Sign Up  </span>
+</h4>
+<span class="newSpan"> &nbsp;...</span> 
+</div>
+<%}%>
 
 </div>

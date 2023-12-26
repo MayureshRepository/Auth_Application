@@ -11,7 +11,9 @@ const User = require('../model/user');
 passport.use(new googleStrategy({
     clientID:"727152983836-3levmmfjuic6sgt94j3dgjvc7cutk0le.apps.googleusercontent.com",
     clientSecret:"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",
-    callbackURL:"http://localhost:8000/auth/google/callback",
+    callbackURL:"https://auth-app-xuh4.onrender.com/auth/google/callback"
+    //For Local
+    // callbackURL:"http://localhost:8000/auth/google/callback",
 
 },
 async function(accessToken,refreshToken,profile,done){
