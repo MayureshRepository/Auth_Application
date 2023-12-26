@@ -43,14 +43,14 @@ app.set('layout extractScripts', true);
 app.use(session({
     name:'Auth',
     //TODO chnge it before deployment
-    secret:'Mayu',
+    secret:secretKey,
     saveUninitialized:false,
     resave:false,
     cookie:{
         maxAge:(1000*60*100)
     },
     store: MongoStore.create({
-        mongoUrl: 'mongodb://localhost/AuthApp',
+        mongoUrl: mongoURI,
         autoRemove: 'interval',
         autoRemoveInterval: 10 // In minutes. Default
       })
