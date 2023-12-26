@@ -23,6 +23,7 @@ const expressLayouts = require('express-ejs-layouts');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const customMiddleware = require('./config/middleware');
+const bcrypt = require('bcryptjs');
 
 
 

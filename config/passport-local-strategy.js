@@ -2,7 +2,8 @@ const passport = require('passport');
 
 const LocalStrategy = require('passport-local').Strategy;
 
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 //Here, saltRounds is set to 10, which means that bcrypt will perform 2^10 (1024) iterations of the key derivation function.
 // You can adjust this value based on your security requirements. A higher 
 //value will increase the security of your passwords but will also make the hashing process slower.
