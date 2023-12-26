@@ -8,9 +8,13 @@ const mongoose = require('mongoose');
 
 
 // Use the environment variable for MongoDB URI
-const mongoURI = process.env.MONGODB_URI;
+//const mongoURI = process.env.MONGODB_URI;
 
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+
+
+mongoose.connect(`mongodb+srv://mayureshpatrikar67:0Ss7sn98JCVVracF@cluster0.lxl9v7r.mongodb.net/?retryWrites=true&w=majority`);
 
 
 const db= mongoose.connection;

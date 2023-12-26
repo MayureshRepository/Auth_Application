@@ -44,9 +44,8 @@ app.use(session({
         maxAge:(1000*60*100)
     },
     store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI,
-        autoRemove: 'interval',
-        autoRemoveInterval: 10 // In minutes. Default
+        mongoUrl: `mongodb+srv://mayureshpatrikar67:0Ss7sn98JCVVracF@cluster0.lxl9v7r.mongodb.net/?retryWrites=true&w=majority`,
+        autoRemove: 'disabled'
       })
 }));
 
