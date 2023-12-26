@@ -37,7 +37,7 @@ app.set('layout extractScripts', true);
 app.use(session({
     name:'Auth',
     //TODO chnge it before deployment
-    secret:secretKey,
+    secret:'secretKey',
     saveUninitialized:false,
     resave:false,
     cookie:{
